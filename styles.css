@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: url("Images/favourite2.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: mid-bottom;
+    color: #333;
+}
+header {
+    background: rgba(115, 5, 5, 0.4);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transform: translateZ(0);
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.0.2);
+    box-shadow: 0 0 10px rgba(17, 16, 16, 0.4);
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+nav a {
+    color: #cecbcb;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+nav a.icon {
+    display: none;
+}
+nav a:hover {
+    background: #577657;
+    color: aquamarine;
+}
+
+.fa-house {
+    color: #fcfcfc;
+    align-self: flex-start;
+    margin: auto;
+    position: inherit;
+    transition: transform 0.2s;
+}
+.fa-house:hover {
+    transform: scale(1.4);
+    color: skyblue;
+}
+.fa-envelope {
+    color: #fcfcfc;
+    margin: auto;
+    position: inherit;
+    transition: transform 0.2s;
+}
+.fa-envelope:hover {
+    transform: scale(1.4);
+}
+.fa-chart-simple {
+    color: #fcfcfc;
+    margin: auto;
+    position: inherit;
+    transition: transform 0.2s;
+}
+.fa-chart-simple:hover {
+    transform: scale(1.4);
+}
+.fa-address-card {
+    color: #fcfcfc;
+    margin: auto;
+    position: inherit;
+    transition: transform 0.2s;
+}
+.fa-address-card:hover {
+    transform: scale(1.4);
+}
+  
+.container {
+    max-width: 1100px;
+    margin: 4rem auto 2rem auto;
+    padding: 1rem;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.container:hover {
+    background: rgba(0, 0, 0, 0.0.1);
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#about p {
+    font-size: medium;
+    font-weight: bolder;
+    color: rgb(217, 198, 151);
+}
+
+#about h2 {
+    color: rgb(208, 205, 211);
+    padding: 10px 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#about h2:hover {
+    color: rgb(183, 33, 125);
+}
+#blog p {
+    font-size: medium;
+    font-style: oblique;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button {
+    border-radius: 5px;
+    background-color: rgb(232, 230, 223);
+    color: dimgray;
+    border: none;
+}
+button:hover {
+    color: aqua;
+    background: #3d4b3c;
+    transform: scale(1.2);
+}
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer:hover {
+    color: aqua;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {
+        display: none;
+    }
+    nav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+}
