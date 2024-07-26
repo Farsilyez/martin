@@ -25,6 +25,7 @@ header {
     transform: translateZ(0);
 }
 header h1 {
+    text-align: center;
     margin: 0;
 }
 nav {
@@ -104,6 +105,33 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.0.1);
 }
 
+.logo-container {
+    justify-content: center;
+    text-align: top;
+    position: inherit;
+    margin: 0px;
+}
+
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(115, 5, 5, 0.04); /* Semi-transparent background */
+    z-index: -1; /* Ensure it is behind the image */
+}
+
+.logo {
+    display: block;
+    max-width: 17%;
+    height: auto;
+    position: relative;
+    color: #fff;
+    border: none;
+}
+
 #about {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -116,7 +144,7 @@ nav a:hover {
 }
 
 #about h2 {
-    color: rgb(208, 205, 211);
+    color: rgb(189, 44, 44);
     padding: 10px 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: none;
@@ -125,7 +153,7 @@ nav a:hover {
 }
 
 #about h2:hover {
-    color: rgb(183, 33, 125);
+    color: rgb(193, 193, 193);
 }
 #blog p {
     font-size: medium;
