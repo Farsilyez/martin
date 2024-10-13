@@ -29,7 +29,6 @@
         </a>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </nav>
-    {% include adsense.html %}
     <div class="container" id="about">
         <h2>About Me</h2>
         <p>Hello! I am Martin Kur, a Python programmer and cyber security analyst. I have a passion for coding and keeping data secure. On this website, you'll find my blog where I share insights and tips related to programming and cyber security.</p>
@@ -38,28 +37,10 @@
         <h2>Blog</h2>
         <p>Welcome to my blog! Here, I will be sharing articles on Python programming, cyber security tips, and more. Stay tuned for updates.</p>
         <article>
-            <h3>Cybersecurity alert for macOS users: Banshee Stealer targets browsers, crypto wallets, and more...</h3>
-            <p>Cybersecurity researchers have uncovered new stealer malware that's designed to specifically target Apple macOS systems.
-
-                Dubbed Banshee Stealer, it's offered for sale in the cybercrime underground for a steep price of $3,000 a month and works across both x86_64 and ARM64 architectures.
-                
-                "Banshee Stealer targets a wide range of browsers, cryptocurrency wallets, and around 100 browser extensions, making it a highly versatile and dangerous threat," Elastic Security Labs said in a Thursday report.
-                
-                The web browsers and crypto wallets targeted by the malware comprise Safari, Google Chrome, Mozilla Firefox, Brave, Microsoft Edge, Vivaldi, Yandex, Opera, OperaGX, Exodus, Electrum, Coinomi, Guarda, Wasabi Wallet, Atomic, and Ledger.
-            
-                It's also equipped to harvest system information and data from iCloud Keychain passwords and Notes, as well as incorporate a slew of anti-analysis and anti-debugging measures to determine if it's running in a virtual environment in an attempt to evade detection.
-
-                Furthermore, it makes use of the CFLocaleCopyPreferredLanguages API to avoid infecting systems where Russian is the primary language.
-                
-                Like other macOS malware strains such as Cuckoo and MacStealer, Banshee Stealer also leverages osascript to display a fake password prompt to trick users into entering their system passwords for privilege escalation.
-                
-                Among the other notable features include the ability to collect data from various files matching .txt, .docx, .rtf, .doc, .wallet, .keys, and .key extensions from the Desktop and Documents folders. The gathered data is then exfiltrated in a ZIP archive format to a remote server ("45.142.122[.]92/send/").
-                
-                "As macOS increasingly becomes a prime target for cybercriminals, Banshee Stealer underscores the rising observance of macOS-specific malware," Elastic said.
-                
-                The disclosure comes as Hunt.io and Kandji detailed another macOS stealer strain that leverages SwiftUI and Apple's Open Directory APIs for capturing and verifying passwords entered by the user in a bogus prompt displayed in order to complete the installation process.
-                
-                "It begins by running a Swift-based dropper that displays a fake password prompt to deceive users," Broadcom-owned Symantec said. "After capturing credentials, the malware verifies them using the OpenDirectory API and subsequently downloads and executes malicious scripts from a command-and-control server."</p>
+            <h3>Quotes Of The Day</h3>
+            <p>Cynicism masquerades as wisdom, but it is the furthest thing from it. Because cynics don't learn anything. Because cynicism is a self-imposed blindness: a rejection of the world because we are afraid it will hurt us or disappoint us. Cynics always say 'no.' But saying 'yes' begins things. Saying 'yes' is how things grow.</p>
+            <i id="likeButton" class="fa-regular fa-thumbs-up fa-xl" aria-hidden="true"></i>
+            <span id="likeCount">0</span> Likes
         </article>
     </div>
     <div class="container" id="contact">

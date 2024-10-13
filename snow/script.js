@@ -26,3 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Generate snowflakes at a regular interval
     setInterval(createSnowflake, 200);
 });
+<script>
+    let likeCount = 0; // Initialize the like count
+
+    document.getElementById('likeButton').addEventListener('click', function() {
+        likeCount++; // Increment the like count
+        document.getElementById('likeCount').textContent = likeCount; // Update the displayed like count
+    });
+</script>

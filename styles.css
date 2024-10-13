@@ -6,7 +6,7 @@ body {
     padding: 0;
     justify-content: center;
     align-items: center;
-    background: url("Images/img55.jpeg") no-repeat center center fixed;
+    background: url("Images/MSG.jpeg") no-repeat center center fixed;
     background-size: cover;
     background-position: mid-bottom;
     color: #333;
@@ -163,6 +163,43 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+#blog article h3 {
+    font-size: 34px; /* Text size */
+    color: #851d1c;  /* Darker text color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+#blog article p {
+    font-size: 16px; /* Text size */
+    color: #dac2c2; /* Softer text color */
+    line-height: 1.8; /* Spacing between lines */
+    text-align: justify; /* Justified text alignment */
+    font-family: 'Georgia', serif; /* Font style */
+}
+.fa-regular {
+    background-color: rgba(138, 10, 10, 0.01);
+    color: rgb(248, 240, 240); /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Button text size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer on hover */
+    margin-top: 10px; /* Space above the button */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-regular:hover {
+    color: #110bc0;
+    transform: scale(1.2); /* Slight zoom */
+    animation: bounce 0.3s ease; /* Apply bounce effect */
+}
+
+#likeCount {
+    font-size: 16px;
+    margin-left: 10px; /* Space between the button and like count */
+}
 button {
     border-radius: 5px;
     background-color: rgb(232, 230, 223);
@@ -205,5 +242,15 @@ footer:hover {
         display: block;
         text-align: left;
         padding: 10px;
+    }
+}
+
+/* Keyframes for the bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1.2); /* Slightly larger */
+    }
+    50% {
+        transform: scale(1.3); /* Bounce up a bit more */
     }
 }
